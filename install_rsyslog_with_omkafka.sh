@@ -17,19 +17,19 @@ cd rsyslog-install
 old_rsyslog_ver=$(rsyslogd -version |head -n 1 | awk '{print $2}')
 
 ## install rsyslog dependency: libestr
-yum install -y libestr-devel.x86_64
+yum install -y libestr-devel
 
 ## install rsyslog dependency: libee
-yum install -y libee-devel.x86_64
+yum install -y libee-devel
 
 ## install rsyslog dependency: json-c
-yum install -y json-c-devel.x86_64
+yum install -y json-c-devel
 
 ## install rsyslog denpendency: uuid
 yum install -y libuuid-devel
 
 ## install rsyslog denpendency: liblogging-stdlog
-yum install -y liblogging-devel.x86_64
+yum install -y liblogging-devel
 
 ## install rsyslog denpendency: rst2man
 yum install -y python-docutils
